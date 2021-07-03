@@ -1,0 +1,26 @@
+{
+    "manifest_version" : 3,
+    "name" : "Replace Chessboard",
+    "version" : "0.1",
+    "permissions" : [
+        "tabs"
+    ],
+    "web_accessible_resources" : [{
+        "resources" : [ "images/150.png" ],
+        "matches" : [ "https://*.chess.com/*" ]
+    }],
+    "background" : {
+        "service_worker" : "background.js"
+    },
+    "action" : {
+        "default_icon" : "icon.png"
+    },
+    "content_scripts" : [
+        {
+            "matches" : [
+                "https://*.chess.com/*"
+            ],
+            "js" : ["content.js"]
+        }
+    ]
+}
