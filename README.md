@@ -8,4 +8,4 @@ Download, extract, go to chrome://extensions/, enable developer mode, click on l
 
 ### Usage
 
-Whenever you start a game, click on the extension icon to replace the chessboard.
+Just enable the extension and it should work. You may use your own style by replacing the images/150.png grid image.
